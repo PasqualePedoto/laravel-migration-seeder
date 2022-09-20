@@ -14,7 +14,11 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p>Ciao sei in home</p>
+                    @forelse($trains as $train)
+                        <p>{{ $train->agency }}</p>
+                    @empty
+                        <p>Non ci sono treni in programmazione</p>
+                    @endforelse
                 </div>
             </div>
         </div>
