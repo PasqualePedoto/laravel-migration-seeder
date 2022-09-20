@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Rotta che rimanda alla Home del sito 
+
 Route::get('/', function () {
     return view('trains.index');
 })->name('trains.index');
