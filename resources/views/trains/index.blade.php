@@ -1,16 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ env('APP_NAME') }}</title>
+@extends('layouts.main')
 
-    {{-- STYLE --}}
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+{{-- Title --}}
+@section('title','Home')
     
-</head>
-<body>
-    <p class="text-danger">Ciao scemo</p>
-</body>
-</html>
+{{-- CDNs --}}
+@section('cdns')
+<script src="https://kit.fontawesome.com/ddb740f05b.js" crossorigin="anonymous"></script>
+@endsection
+
+{{-- MAIN CONTENT --}}
+@section('main-content')
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Ciao sei in home</p>
+                </div>
+            </div>
+        </div>
+    </main>
+@endsection
